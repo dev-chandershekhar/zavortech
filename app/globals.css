@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #ffffff;
+  --fg: #1c0b18;
+  --muted: #5e4a58;
+  --card: #ffffff;
+  --line: #e8dce5;
+  --accent: #4F0341;
+  --accent-fg: #ffffff;
+  --accent-soft: #f7eef5;
+  --good: #15803d;
+  --bad: #b91c1c;
+}
+
+:root[data-theme="dark"] {
+  --bg: #16040f;
+  --fg: #f7eef5;
+  --muted: #c3a9bd;
+  --card: #220a1b;
+  --line: #3a1a31;
+  --accent: #e9a9dc;
+  --accent-fg: #2a0220;
+  --accent-soft: #2b0c22;
+  --good: #4ade80;
+  --bad: #f87171;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #16040f;
+    --fg: #f7eef5;
+    --muted: #c3a9bd;
+    --card: #220a1b;
+    --line: #3a1a31;
+    --accent: #e9a9dc;
+    --accent-fg: #2a0220;
+    --accent-soft: #2b0c22;
+    --good: #4ade80;
+    --bad: #f87171;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-soft: var(--accent-soft);
+  --color-good: var(--good);
+  --color-bad: var(--bad);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-sans); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
