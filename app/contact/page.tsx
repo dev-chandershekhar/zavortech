@@ -17,7 +17,7 @@ export default function Page() {
         title="Book the free audit."
         intro="A 30-minute screen share. No code access, no commitment."
       />
-      <Section title="Pick a time">
+      <Section title="Pick a day">
         <BookingEmbed />
       </Section>
       <Section tone="soft" title="Or send a message">

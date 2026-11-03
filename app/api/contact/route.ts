@@ -39,7 +39,9 @@ export async function POST(req: Request) {
 
   const name = String(body.name ?? "").trim();
   const email = String(body.email ?? "").trim();
-  const message = String(body.message ?? "").trim();
+  const date = String(body.date ?? "").trim();
+  const booking = /^\d{4}-\d{2}-\d{2}$/.test(date);
+  const message = booking ? `Free audit requested for ${date}.` : String(body.message ?? "").trim();
   if (!name || name.length > 100 || !EMAIL_RE.test(email) || email.length > 200 || message.length < 10 || message.length > 4000) {
     return NextResponse.json({ error: "Please check your name, email and message." }, { status: 400 });
   }
