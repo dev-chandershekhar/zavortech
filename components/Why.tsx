@@ -19,7 +19,7 @@ export default function Why() {
             separately, in writing.
           </p>
         </div>
-        <figure className="rounded-xl border border-line bg-card p-5">
+        <figure className="glass rounded-2xl p-5">
           <svg viewBox="0 0 400 220" role="img" aria-label="Chart: shipped code rises over time while shared team understanding falls" className="w-full">
             <line x1="30" y1="190" x2="380" y2="190" stroke="var(--line)" />
             <line x1="30" y1="20" x2="30" y2="190" stroke="var(--line)" />

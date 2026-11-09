@@ -11,7 +11,7 @@ const links = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-bg/85 backdrop-blur">
+    <header className="sticky top-0 z-40 glass border-x-0 border-t-0 !bg-bg/60">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
         <Link href="/" className="flex items-center gap-2 font-bold tracking-tight">
           <span className="grid h-7 w-7 place-items-center rounded-md bg-accent font-mono text-sm text-accent-fg">

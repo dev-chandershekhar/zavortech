@@ -14,7 +14,7 @@ export default function Button({ href, children, variant = "primary", className 
   const styles =
     variant === "primary"
       ? "bg-accent text-accent-fg hover:opacity-90"
-      : "border border-line bg-card text-fg hover:bg-accent-soft";
+      : "glass text-fg hover:bg-accent-soft/50";
   // Plausible tagged-events: any link to the booking URL is tracked as a conversion click.
   const track = href === BOOKING_URL ? "plausible-event-name=Book+Audit Click" : "";
   return (

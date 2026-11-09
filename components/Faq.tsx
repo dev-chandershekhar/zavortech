@@ -14,7 +14,7 @@ export default function Faq({ items }: { items: { q: string; a: string }[] }) {
           })),
         }}
       />
-      <div className="max-w-3xl divide-y divide-line rounded-xl border border-line bg-card">
+      <div className="max-w-3xl divide-y divide-line glass rounded-2xl">
         {items.map((i) => (
           <details key={i.q} className="group p-5">
             <summary className="cursor-pointer list-none font-semibold marker:hidden">{i.q}</summary>

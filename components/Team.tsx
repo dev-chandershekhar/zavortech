@@ -16,7 +16,7 @@ export default function Team() {
       </p>
       <div className="mt-8 grid gap-4 sm:grid-cols-3">
         {team.map((m, i) => (
-          <div key={i} className="rounded-xl border border-line bg-card p-6">
+          <div key={i} className="glass rounded-2xl p-6">
             <div className="h-14 w-14 rounded-full bg-accent-soft" aria-hidden />
             <p className="mt-4 font-semibold">{m.name}</p>
             <p className="text-sm text-muted">{m.role}</p>

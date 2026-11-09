@@ -35,7 +35,7 @@ export default function Page() {
       <Section title="The team">
         <div className="grid gap-4 md:grid-cols-2">
           {team.map((m, i) => (
-            <div key={i} className="rounded-xl border border-line bg-card p-6">
+            <div key={i} className="glass rounded-2xl p-6">
               {m.photo ? (
                 <Image
                   src={m.photo}

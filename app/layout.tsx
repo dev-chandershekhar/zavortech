@@ -47,6 +47,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Skip to content
         </a>
+        <div aria-hidden className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+          <div className="hero-orb -left-24 -top-24 h-96 w-96 bg-accent" />
+          <div className="hero-orb -right-20 top-1/4 h-80 w-80 bg-[#e9a9dc]" style={{ animationDelay: "-5s" }} />
+          <div className="hero-orb bottom-[-6rem] left-1/3 h-72 w-72 bg-good/50" style={{ animationDelay: "-9s" }} />
+        </div>
         <Header />
         <main id="main">{children}</main>
         <Footer />

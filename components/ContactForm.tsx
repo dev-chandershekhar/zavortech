@@ -31,14 +31,14 @@ export default function ContactForm() {
 
   if (status === "done") {
     return (
-      <div role="status" className="rounded-xl border border-line bg-card p-8">
+      <div role="status" className="glass rounded-2xl p-8">
         <p className="font-semibold">Thanks, we got your message.</p>
         <p className="mt-1 text-sm text-muted">We reply within one business day.</p>
       </div>
     );
   }
 
-  const field = "w-full rounded-lg border border-line bg-card px-4 py-3 text-sm";
+  const field = "w-full rounded-lg border border-fg/15 bg-card/50 px-4 py-3 backdrop-blur text-sm";
   return (
     <form onSubmit={onSubmit} className="grid max-w-xl gap-4">
       <label className="grid gap-1 text-sm font-medium">

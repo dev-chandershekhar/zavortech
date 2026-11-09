@@ -18,7 +18,7 @@ export default function Problem() {
       </p>
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
         {risks.map((r) => (
-          <div key={r.t} className="rounded-xl border border-line bg-card p-6">
+          <div key={r.t} className="glass rounded-2xl p-6">
             <h3 className="font-semibold">{r.t}</h3>
             <p className="mt-2 text-sm text-muted">{r.d}</p>
           </div>

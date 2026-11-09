@@ -3,7 +3,7 @@ import { BRAND } from "@/lib";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-line bg-card">
+    <footer className="glass border-x-0 border-b-0">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
           <p className="text-lg font-bold">{BRAND}</p>

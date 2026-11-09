@@ -54,7 +54,7 @@ export default function Page() {
         </div>
       </Section>
       <Section id="prices" tone="soft" eyebrow="Prices" title="Every stage, priced before you commit.">
-        <div tabIndex={0} role="region" aria-label="Pricing stages table, scrollable" className="overflow-x-auto rounded-xl border border-line bg-card">
+        <div tabIndex={0} role="region" aria-label="Pricing stages table, scrollable" className="overflow-x-auto glass rounded-2xl">
           <table className="w-full min-w-[560px] text-left text-sm">
             <thead className="border-b border-line text-muted">
               <tr><th className="p-4">Stage</th><th className="p-4">Price</th><th className="p-4">What you get</th></tr>

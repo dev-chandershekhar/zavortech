@@ -13,7 +13,7 @@ export default function Stages() {
     <Section eyebrow="How it starts" title="Small first step. Prices before commitment.">
       <ol className="grid gap-4 md:grid-cols-4">
         {stages.map((s) => (
-          <li key={s.n} className="rounded-xl border border-line bg-card p-6">
+          <li key={s.n} className="glass rounded-2xl p-6">
             <span className="grid h-8 w-8 place-items-center rounded-full bg-accent-soft text-sm font-bold text-accent">{s.n}</span>
             <h3 className="mt-4 font-semibold">{s.t}</h3>
             <p className="mt-1 text-sm font-medium text-accent">{s.p}</p>

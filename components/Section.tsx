@@ -12,7 +12,7 @@ export default function Section({
   tone?: "plain" | "soft";
 }) {
   return (
-    <section id={id} className={tone === "soft" ? "bg-accent-soft/60" : ""}>
+    <section id={id} className={tone === "soft" ? "bg-accent-soft/30" : ""}>
       <div className="mx-auto max-w-6xl px-5 py-20">
         {eyebrow && (
           <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">{eyebrow}</p>

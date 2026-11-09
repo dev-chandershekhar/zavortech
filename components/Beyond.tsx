@@ -12,7 +12,7 @@ export default function Beyond() {
     <Section eyebrow="Beyond the upgrade" title="What else we do.">
       <div className="grid gap-4 md:grid-cols-3">
         {items.map((i) => (
-          <Link key={i.t} href={i.href} className="group rounded-xl border border-line bg-card p-6 transition-colors hover:bg-accent-soft">
+          <Link key={i.t} href={i.href} className="group glass rounded-2xl p-6 transition-colors hover:bg-accent-soft/50">
             <h3 className="font-semibold">{i.t}</h3>
             <p className="mt-2 text-sm text-muted">{i.d}</p>
             <span className="mt-4 inline-block text-sm font-semibold text-accent group-hover:underline">Learn more</span>
